@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/clientes.css">
+    <title>proyecto</title>
+
+   
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    
+
+</head>
+<body>
+    <header>
+        <div class="showcase">
+            <div class="tenue">
+                <img src="" alt="">
+                <h2>Registro de Clientes</h2> 
+            </div>
+        </div>
+    </header>
+    <div class="row">
+        <div class="col-4 menu col-t-4"><br>
+            <ul>
+                <li onclick="nuevocli()">Nuevo Cliente</li>
+                <li onclick="mostrarcli()">Mostrar Cliente</li>
+                <li onclick="eliminarprimer()">Eliminar primer Cliente</li>
+                <li onclick="eliminarultimo()">Eliminar ultimo Cliente</li>
+                <li onclick="borrar()">Borrar Lista de Clientes</li>
+                <li onclick="buscarcliente()">Buscar Clientes</li>
+            </ul>
+        </div>
+        <div id="resultado" class="col-8 col-t-8">
+         
+                    
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 foot">
+                <h3 id="encabezado"></h3>
+        </div>
+</div>
+<script src="../js/cliente.js"></script>
+    
+</body>
+
+
+</html>

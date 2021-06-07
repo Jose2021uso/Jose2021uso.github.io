@@ -1,0 +1,463 @@
+/* VAriables para el tema del sitio */
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+:root{
+    --primary:#0f0f0f;
+    --secundary:#2e4469;
+    --background:#35495e;
+    --black-text:rgb(61, 61, 61);
+    --white-text:#ffffff;
+    --button-hover:#38755a;
+    
+}
+
+/*@font-face{
+    font-family: proyecto;
+    src: url(/fuentes/Organ\ Farmer\ Demo.ttf);
+}*/ 
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+nav{
+    background-color: rgb(120, 219, 198);
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+header h1{
+    color: var(--primary);
+    font-size: 2rem;
+    letter-spacing: .7rem;
+    
+}
+#titulo {
+    font-family: 'Merienda', cursive;
+}
+
+nav ul{
+    display: flex;
+    
+}
+
+nav ul li{
+    border-right: solid .1rem rgba(61, 61, 61, 0.41);
+}
+
+nav ul li:last-child{
+    border-right: none;
+}
+
+nav ul li a {
+    color: var(--primary);
+    font-size: 1.2rem;
+    padding: .8rem 1rem;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    background-color: var(--button-hover);
+    transition: all .3s;
+}
+
+.drawer{
+    color: var(--white-text);
+    float: left;
+    cursor: pointer;
+    display: none;
+    margin-left: 1rem;
+    border: solid .1rem var(--white-text);
+    padding: .2rem;
+    border-radius: .1rem;
+}
+
+#ckbox{
+    display: none;
+}
+
+/* Estilos de la seccion principal */
+
+main{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    font-family: proyecto;
+}
+
+main h1{
+    font-size: 1.7rem;
+    color: var(--black-text);
+    text-align: center;
+    margin: 1rem;
+}
+
+main p{
+    color: var(--black-text);
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/*main form{
+    display: flex;
+    justify-content: center;
+}
+
+main form button{
+    margin: 0 .5rem;
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 1.1rem;
+}*/
+
+.primary-btn{
+    background-color: var(--primary);
+    color: var(--white-text);
+    border-style: none;
+}
+
+.outline-btn{
+    background-color: var(--white-text);
+    color: var(--primary);
+    border: solid .1rem var(--primary);
+}
+
+.primary-btn:hover{    
+    background-color: var(--white-text);
+    color: var(--primary);
+    border: solid .1rem var(--primary);
+    transition: all .3s;
+}
+
+.outline-btn:hover{
+    background-color: var(--primary);
+    color: var(--white-text);
+    border-style: none;
+    transition: all .3s;
+}
+
+main img{
+    height: 70vh;
+    
+}
+
+footer{
+    background-color: rgb(120, 219, 198);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.social-content li {
+    list-style: none;
+    margin: 20px;
+    animation: left-move 1s ease-in;
+  }
+  
+.social-content i {
+    font-size: 1.6em;
+    color: black;
+  }
+  
+.social-content i:hover {
+    transform: scale(1.5);
+  }
+@media(max-width:780px){
+
+    nav{
+        justify-content: flex-start;
+    }
+
+    .drawer{
+        display: block;
+    }
+
+    nav h1{
+        margin-left: 1rem;
+    }
+
+    ul{
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background-color: var(--background);
+        top: 10vh;
+        left: -100%;
+        text-align: left;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+    }
+
+    nav ul li{
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        padding-left: 2rem;
+        border-bottom: solid .1rem rgba(201, 196, 196, 0.4) ;
+    }
+
+    #ckbox:checked ~ .menu-box{
+        left: 0;
+    }
+
+    .image{
+        display: none;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

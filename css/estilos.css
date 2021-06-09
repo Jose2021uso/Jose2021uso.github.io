@@ -1,19 +1,6 @@
-/* VAriables para el tema del sitio */
-@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
-:root{
-    --primary:#0f0f0f;
-    --secundary:#2e4469;
-    --background:#35495e;
-    --black-text:rgb(61, 61, 61);
-    --white-text:#ffffff;
-    --button-hover:#38755a;
-    
-}
 
-/*@font-face{
-    font-family: proyecto;
-    src: url(/fuentes/Organ\ Farmer\ Demo.ttf);
-}*/ 
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
 
 *{
     margin: 0;
@@ -35,7 +22,7 @@ nav{
 }
 
 header h1{
-    color: var(--primary);
+    color:black;
     font-size: 2rem;
     letter-spacing: .7rem;
     
@@ -58,24 +45,25 @@ nav ul li:last-child{
 }
 
 nav ul li a {
-    color: var(--primary);
+    color: black;
     font-size: 1.2rem;
     padding: .8rem 1rem;
     text-transform: uppercase;
 }
 
 nav ul li a:hover{
-    background-color: var(--button-hover);
+    background-color:#38755a;
     transition: all .3s;
+    border-radius: 15px;
 }
 
 .drawer{
-    color: var(--white-text);
+    color: #ffffff;
     float: left;
     cursor: pointer;
     display: none;
     margin-left: 1rem;
-    border: solid .1rem var(--white-text);
+    border: solid .1rem #ffffff;
     padding: .2rem;
     border-radius: .1rem;
 }
@@ -84,7 +72,6 @@ nav ul li a:hover{
     display: none;
 }
 
-/* Estilos de la seccion principal */
 
 main{
     padding-top: 1rem;
@@ -97,58 +84,22 @@ main{
 
 main h1{
     font-size: 1.7rem;
-    color: var(--black-text);
+    color: rgb(61, 61, 61);
     text-align: center;
     margin: 1rem;
+    display: flex;
 }
 
 main p{
-    color: var(--black-text);
+    color: rgb(61, 61, 61);
     text-align: center;
     margin: 1rem 0;
-}
-
-/*main form{
     display: flex;
-    justify-content: center;
 }
 
-main form button{
-    margin: 0 .5rem;
-    width: 8rem;
-    height: 2.5rem;
-    font-size: 1.1rem;
-}*/
-
-.primary-btn{
-    background-color: var(--primary);
-    color: var(--white-text);
-    border-style: none;
-}
-
-.outline-btn{
-    background-color: var(--white-text);
-    color: var(--primary);
-    border: solid .1rem var(--primary);
-}
-
-.primary-btn:hover{    
-    background-color: var(--white-text);
-    color: var(--primary);
-    border: solid .1rem var(--primary);
-    transition: all .3s;
-}
-
-.outline-btn:hover{
-    background-color: var(--primary);
-    color: var(--white-text);
-    border-style: none;
-    transition: all .3s;
-}
 
 main img{
     height: 70vh;
-    
 }
 
 footer{
@@ -157,25 +108,31 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 70px;
     text-transform: uppercase;
     font-weight: bold;
 }
-.social-content li {
+main .social-content li {
     list-style: none;
     margin: 20px;
     animation: left-move 1s ease-in;
   }
   
-.social-content i {
+main .social-content i {
     font-size: 1.6em;
     color: black;
   }
-  
-.social-content i:hover {
+main .social-content i:hover {
     transform: scale(1.5);
   }
-@media(max-width:780px){
+.social-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+@media(max-width:1020px){
 
     nav{
         justify-content: flex-start;
@@ -188,12 +145,15 @@ footer{
     nav h1{
         margin-left: 1rem;
     }
+    main .social-content i {
+        display: center;
+      }
 
     ul{
         position: fixed;
         width: 50%;
         height: 100vh;
-        background-color: var(--background);
+        background-color: #35495e;
         top: 10vh;
         left: -100%;
         text-align: left;
@@ -216,7 +176,7 @@ footer{
     }
 
     .image{
-        display: none;
+        display: flex;
     }
 
 

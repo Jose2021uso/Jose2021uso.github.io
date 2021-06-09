@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: myfont;
+    src: 
+        url('../fonts/CustomCraft-Regular.otf') format('opentype'), 
+        url('../fonts/CustomCraft-Regular.ttf') format('truetype'), 
+        url('../fonts/CustomCraft-Regular.woff') format('woff');
+}
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merienda', cursive;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: whitesmoke;
+}
+
+header {
+  width: 100%;
+}
+
+.showcase{
+    padding: 130px;
+    background-image: url("../images/imag3.png");
+    background-color:goldenrod;
+    background-blend-mode: soft-light;
+    background-position: center;
+    box-sizing: border-box;
+}
+.social-content{
+    padding: 10px;
+    border: none;
+    box-shadow: none;
+    
+    text-decoration: none;
+    font-size: 20px;
+}
+.social-content {
+    font-size: 1.6em;
+    color:black;
+  }
+
+
+
+
+
+article p{
+    text-align: center;
+}
+
+footer{
+    background-color: goldenrod;
+    color: black;
+    text-align: center;
+    
+}
+
+footer h3,p{
+    padding: 20px;
+
+}
+
+@media only screen and (min-width: 610px){ 
+
+
+}
+@media only screen and (min-width: 760px){ 
+    /* ESCRITORIO */
+    
+
+    nav li{
+        float: left;
+    }
+
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}

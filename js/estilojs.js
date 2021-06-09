@@ -82,8 +82,18 @@ function nuevocliente(){
     if (cnombres != ""){
         if (capellidos != ""){
             if (cdireccion != ""){
-                contador = contador + 1
-                clientes.push({nombres:cnombres,apellidos:capellidos,direccion:cdireccion,correo:ccorreo,telefono:ctelefono});
+                if (ccorreo != ""){
+                    if (ctelefono != ""){
+                        contador = contador + 1
+                        clientes.push({nombres:cnombres,apellidos:capellidos,direccion:cdireccion,correo:ccorreo,telefono:ctelefono});
+                    }
+                    else{
+                        mensajeIngresarCli();
+                    }
+                }
+                else{
+                    mensajeIngresarCli();
+                }
             }
             else {
                 mensajeIngresarCli();

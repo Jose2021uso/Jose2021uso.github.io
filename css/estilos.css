@@ -40,9 +40,7 @@ nav ul li{
     border-right: solid .1rem rgba(61, 61, 61, 0.41);
 }
 
-nav ul li:last-child{
-    border-right: none;
-}
+
 
 nav ul li a {
     color: black;
@@ -82,20 +80,7 @@ main{
     font-family: proyecto;
 }
 
-main h1{
-    font-size: 1.7rem;
-    color: rgb(61, 61, 61);
-    text-align: center;
-    margin: 1rem;
-    display: flex;
-}
 
-main p{
-    color: rgb(61, 61, 61);
-    text-align: center;
-    margin: 1rem 0;
-    display: flex;
-}
 
 
 main img{
@@ -111,25 +96,6 @@ footer{
     height: 70px;
     text-transform: uppercase;
     font-weight: bold;
-}
-main .social-content li {
-    list-style: none;
-    margin: 20px;
-    animation: left-move 1s ease-in;
-  }
-  
-main .social-content i {
-    font-size: 1.6em;
-    color: black;
-  }
-main .social-content i:hover {
-    transform: scale(1.5);
-  }
-.social-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
 }
 
 @media(max-width:1020px){
